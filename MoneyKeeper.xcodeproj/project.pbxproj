@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		3C6526861F13688600D391DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6526851F13688600D391DE /* AppDelegate.swift */; };
-		3C6526881F13688600D391DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6526871F13688600D391DE /* ViewController.swift */; };
 		3C65268B1F13688600D391DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C6526891F13688600D391DE /* Main.storyboard */; };
 		3C65268D1F13688600D391DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C65268C1F13688600D391DE /* Assets.xcassets */; };
 		3C6526901F13688600D391DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C65268E1F13688600D391DE /* LaunchScreen.storyboard */; };
 		3C65269B1F13688600D391DE /* MoneyKeeperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C65269A1F13688600D391DE /* MoneyKeeperTests.swift */; };
 		3C6526A61F13688600D391DE /* MoneyKeeperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6526A51F13688600D391DE /* MoneyKeeperUITests.swift */; };
+		3C6526B51F136CF100D391DE /* ExpenseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6526B41F136CF100D391DE /* ExpenseTableViewController.swift */; };
+		3C6526B71F136CFF00D391DE /* IncomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6526B61F136CFF00D391DE /* IncomeTableViewController.swift */; };
+		3C6526B91F136D0A00D391DE /* TransactionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6526B81F136D0A00D391DE /* TransactionTableViewController.swift */; };
+		3C6526BB1F136D1500D391DE /* RemainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6526BA1F136D1500D391DE /* RemainTableViewController.swift */; };
+		3C6526BF1F136D3500D391DE /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6526BE1F136D3500D391DE /* MenuTableViewController.swift */; };
+		3C6526C21F136D6A00D391DE /* CustomKeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6526C11F136D6A00D391DE /* CustomKeyboardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +41,6 @@
 /* Begin PBXFileReference section */
 		3C6526821F13688600D391DE /* MoneyKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C6526851F13688600D391DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3C6526871F13688600D391DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3C65268A1F13688600D391DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3C65268C1F13688600D391DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C65268F1F13688600D391DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +51,12 @@
 		3C6526A11F13688600D391DE /* MoneyKeeperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoneyKeeperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C6526A51F13688600D391DE /* MoneyKeeperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyKeeperUITests.swift; sourceTree = "<group>"; };
 		3C6526A71F13688600D391DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C6526B41F136CF100D391DE /* ExpenseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpenseTableViewController.swift; sourceTree = "<group>"; };
+		3C6526B61F136CFF00D391DE /* IncomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncomeTableViewController.swift; sourceTree = "<group>"; };
+		3C6526B81F136D0A00D391DE /* TransactionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionTableViewController.swift; sourceTree = "<group>"; };
+		3C6526BA1F136D1500D391DE /* RemainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemainTableViewController.swift; sourceTree = "<group>"; };
+		3C6526BE1F136D3500D391DE /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		3C6526C11F136D6A00D391DE /* CustomKeyboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomKeyboardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +107,8 @@
 		3C6526841F13688600D391DE /* MoneyKeeper */ = {
 			isa = PBXGroup;
 			children = (
+				3C6526B31F136CBB00D391DE /* Controller */,
 				3C6526851F13688600D391DE /* AppDelegate.swift */,
-				3C6526871F13688600D391DE /* ViewController.swift */,
 				3C6526891F13688600D391DE /* Main.storyboard */,
 				3C65268C1F13688600D391DE /* Assets.xcassets */,
 				3C65268E1F13688600D391DE /* LaunchScreen.storyboard */,
@@ -123,6 +133,27 @@
 				3C6526A71F13688600D391DE /* Info.plist */,
 			);
 			path = MoneyKeeperUITests;
+			sourceTree = "<group>";
+		};
+		3C6526B31F136CBB00D391DE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3C6526C01F136D3E00D391DE /* TableVC */,
+				3C6526C11F136D6A00D391DE /* CustomKeyboardViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		3C6526C01F136D3E00D391DE /* TableVC */ = {
+			isa = PBXGroup;
+			children = (
+				3C6526BE1F136D3500D391DE /* MenuTableViewController.swift */,
+				3C6526B41F136CF100D391DE /* ExpenseTableViewController.swift */,
+				3C6526B61F136CFF00D391DE /* IncomeTableViewController.swift */,
+				3C6526B81F136D0A00D391DE /* TransactionTableViewController.swift */,
+				3C6526BA1F136D1500D391DE /* RemainTableViewController.swift */,
+			);
+			name = TableVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +293,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C6526881F13688600D391DE /* ViewController.swift in Sources */,
+				3C6526B91F136D0A00D391DE /* TransactionTableViewController.swift in Sources */,
+				3C6526B71F136CFF00D391DE /* IncomeTableViewController.swift in Sources */,
+				3C6526BF1F136D3500D391DE /* MenuTableViewController.swift in Sources */,
+				3C6526B51F136CF100D391DE /* ExpenseTableViewController.swift in Sources */,
+				3C6526C21F136D6A00D391DE /* CustomKeyboardViewController.swift in Sources */,
+				3C6526BB1F136D1500D391DE /* RemainTableViewController.swift in Sources */,
 				3C6526861F13688600D391DE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
