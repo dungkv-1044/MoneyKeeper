@@ -8,35 +8,32 @@
 
 import UIKit
 
-class MenuTableViewController: UITableViewController {
+protocol MenuTableViewControllerDelegate: class {
+    func didSelectCell(at indexPath: IndexPath)
+    func passTitleName(text: String)
+}
 
+class MenuTableViewController: UITableViewController {
+    weak var delegate: MenuTableViewControllerDelegate?
+    let indexPath = IndexPath(row: 0, section: 0)
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        delegate?.didSelectCell(at: indexPath)
+        
+       
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        delegate?.didSelectCell(at: indexPath)
+        let cell = tableView.cellForRow(at: indexPath)
+        let text = cell?.textLabel?.text
+        delegate?.passTitleName(text: text!)
     }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
-    }
-
+    
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
